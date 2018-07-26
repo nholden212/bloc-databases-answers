@@ -1,0 +1,52 @@
+EXERCISES
+
+1.
+    1.  String
+    2.  Integer
+    3.  Date
+    4.  Float
+    5.  Money
+
+2.  External data sources are necessary, whether as a database or a text file, because storing data in the program itself does not allow the data to save when the program stops running.
+    A text file can be used to accomplish this, but if there are multiple instances of the program running, the data will not add to the text file correctly.
+    Therefore, a text file can be used when data needs to live outside of the application, but only one instance of the program will ever run at a time.
+    A database should be used whenever data needs to live outside of the application AND there is a chance that more than one instance of the program will run concurrently.
+
+3.  One difference between SQL and other programming languages is that SQL uses a single = to denote equallity instead of a double == symbol.
+
+4.  Data in a relational database is arranged in various tables.
+    Data can be stored, manipulated, or retrieved.
+    Each column of the table represents a different aspect of the data (somewhat like how each attribute of an object describes the value it holds).
+    Each row of the table represents a single instance of data. The values in the different columns are associated by row in this way.
+    Each cell holds an individual data value, so that a particular "attribute" of a particular instance of data is represented by the value of the cell at the intersection of the appropriate row and column.
+
+5.  See above.
+
+6.  1.  Dates
+    2.  Numerical values
+    3.  Strings
+
+7.  1.  This query asks for the date and amount columns from the payments table.
+        Since it doesn't specify anything using a WHERE clause, it will return all of the data from those columns.
+    2.  This query asks for the amount column from the payments table for all records where the amount is greater than 500.
+        It will return the amount 1500.00
+    3.  This query asks to return all columns from the payments table for the record where payee is equal to "Mega Foods".
+        It will return:
+            Date:   2016-05-15
+            Payee:  Mega Foods
+            Amount: 124.93
+            Memo:   Groceries
+
+8.
+    1.
+        SELECT email, signup
+        FROM users
+        WHERE name = 'DeAndre Data';
+
+        SELECT userid
+        FROM users
+        WHERE email = 'aleesia.algorithm@uw.edu';
+
+        SELECT *
+        FROM users
+        WHERE userid = 4;
